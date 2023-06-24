@@ -1,0 +1,12 @@
+plugins {
+    id 'java-library'
+}
+// место откуда подтягиваются зависимости
+repositories {
+    mavenCentral()
+}
+
+// подключение зависимостей
+dependencies {
+    TestImplementation()
+}
