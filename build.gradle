@@ -8,5 +8,5 @@ repositories {
 
 // подключение зависимостей
 dependencies {
-    TestImplementation()
+    TestImplementation("")
 }
