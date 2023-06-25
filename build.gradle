@@ -8,5 +8,10 @@ repositories {
 
 // подключение зависимостей
 dependencies {
-    TestImplementation("")
+    testImplementation("org.junit.jupiter:junit-jupiter:5.10.0-M1")
+}
+
+// сообщение gradle, что используется JUnit, для запуска тестов
+test {
+    useJUnitPlatform()
 }
