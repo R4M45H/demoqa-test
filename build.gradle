@@ -8,7 +8,10 @@ repositories {
 
 // подключение зависимостей
 dependencies {
-    testImplementation("org.junit.jupiter:junit-jupiter:5.10.0-M1")
+    testImplementation(
+            "com.codeborne:selenide:6.15.0",
+            "org.junit.jupiter:junit-jupiter:5.10.0-M1",
+            "org.slf4j:slf4j-simple:2.0.7")
 }
 
 // сообщение gradle, что используется JUnit, для запуска тестов
