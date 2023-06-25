@@ -9,7 +9,7 @@ public class CssXpathExamples {
         // <input type="email" class="inputtext login_from_input_box" name="email" id="email" data-testid="email">
         $("[data-testid=email").setValue("1");
         $(by("data-testid", "email")).setValue("1");
-        $("input. login_form_input_box[name=email]#email[data-testid=email]").setValue("1");
+        $("input .login_form_input_box[name=email]#email[data-testid=email]").setValue("1");
 
         // <input type="email" class="inputtext login_from_input_box" name="email" id="email">
         $("[id=email").setValue("1");
