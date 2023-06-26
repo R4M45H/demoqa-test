@@ -55,11 +55,12 @@ public class AutomationPracticeForm {
         $(byId("city")).click();
         $(byText("Agra")).click();
 
-        // $(byText("Select picture")).uploadFile(new File(filePath));
+        $("#uploadPicture").uploadFile(new File(filePath));
 
         $("#submit").click();
         $(".modal-content").shouldBe(visible);
         $(".modal-title").shouldHave(text("Thanks for submitting the form"));
 
+        $("#closeLargeModal").click();
     }
 }
