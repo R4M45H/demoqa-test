@@ -33,7 +33,10 @@ public class AutomationPracticeForm {
         $("#lastName").setValue("Ramaw");
         $("#userEmail").setValue("RamawOne@gmail.com");
 
-        $(byText("Male")).click();
+
+        $("#gender-radio-1").parent().click(); // good
+        //$(byText("Male")).click(); //not very good
+
 
         $("#userNumber").setValue("8911999999");
 
@@ -55,7 +58,9 @@ public class AutomationPracticeForm {
         $(byId("city")).click();
         $(byText("Agra")).click();
 
-        $("#uploadPicture").uploadFile(new File(filePath));
+        $("#uploadPicture").uploadFromClasspath("img/Toolsqa.jpg");
+        //$("#uploadPicture").uploadFile(new File(filePath));
+
 
         $("#submit").click();
         $(".modal-content").shouldBe(visible);
