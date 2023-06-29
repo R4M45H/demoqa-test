@@ -5,16 +5,13 @@ import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
-import java.io.File;
-
-import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selectors.byId;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
-public class AutomationPracticeForm {
+public class RegistrationTests {
 
     @BeforeAll
     static void beforeAll(){
@@ -23,8 +20,8 @@ public class AutomationPracticeForm {
         Configuration.baseUrl = "https://demoqa.com";
     }
     @Test
-    void PracticeForm() {
-        String filePath = "src/test/java/demoqa/Toolsqa.jpg";
+    void successfulRegistrationTest() {
+        //String filePath = "src/test/java/demoqa/Toolsqa.jpg";
 
         open("/automation-practice-form");
         $(".pattern-backgound .main-header").shouldHave(text("Practice Form"));
